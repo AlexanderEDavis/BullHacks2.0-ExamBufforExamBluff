@@ -1,14 +1,14 @@
 ﻿Imports System.Data.SqlClient
 
 Module Data
+    Public QueryResults = New List(Of List(Of Object))
     Public Sub SqlQuery()
         Dim con As New SqlConnection
         Try
             con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EBEBDat.mdf;Integrated Security=True"
             Dim cmd As New SqlCommand("SELECT * FROM Questions", con)
             con.Open()
-            'MessageBox.Show("Connection Opened")
-            Dim QueryResults = New List(Of List(Of Object))
+            'MessageBox.Show("Connection Opened
             'Execute Query
             Dim reader As SqlDataReader = cmd.ExecuteReader()
             While reader.Read()
