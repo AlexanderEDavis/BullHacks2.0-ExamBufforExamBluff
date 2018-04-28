@@ -87,7 +87,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSV.vb" />
     <Compile Include="Data.vb" />
+    <Compile Include="Question Load.vb" />
     <Compile Include="QuitDialog.Designer.vb">
       <DependentUpon>QuitDialog.vb</DependentUpon>
     </Compile>
@@ -169,16 +171,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="EBEBDat.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EBEBDat_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>EBEBDat.mdf</DependentUpon>
-    </Content>
-    <Content Include="QuestionQuery.sql" />
+    <None Include="Questions.csv" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

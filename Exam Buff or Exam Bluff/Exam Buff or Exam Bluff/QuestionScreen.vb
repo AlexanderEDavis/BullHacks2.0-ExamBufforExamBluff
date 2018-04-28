@@ -1,30 +1,56 @@
 ﻿Public Class QuestionScreen
+    Public GameScore As Integer = 0
+    Public x As Integer = 0
+    Public answer As Integer
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblPassedName.Text = "Hello " + WelcomeScreen.playerName + "!"
-        GetNextRecord(Data.QueryResults)
+        QuestionLoad.FirstQuestion()
     End Sub
-    Public Iterator Function GetNextRecord(ByVal results As List(Of List(Of Object))) As System.Collections.IEnumerable
-        For Each record As List(Of Object) In results
-            Yield (record)
-        Next
-    End Function
 
-    'Private rnd As New Random()
-
-    'Public Sub Shuffle(items As Object())
-    '    Dim j As Int32
-    '    Dim temp As String
-
-    '    For n As Int32 = items.Length - 1 To 0 Step -1
-    '        j = rnd.Next(0, n + 1)
-    '        'Swap
-    '        temp = items(n)
-    '        items(n) = items(j)
-    '        items(j) = temp
-    '    Next n
-    'End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click, Button5.Click, Button4.Click, Button3.Click, Button1.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         QuitDialog.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Button1.Text = CSV.questionArray(x, answer) Then
+            GameScore = GameScore + 1
+            Label3.Text = "Score: " + GameScore.ToString
+            MsgBox("Correct Answer!", MsgBoxStyle.Information, "Correct")
+        Else
+            MsgBox("Incorrect Answer!", MsgBoxStyle.Exclamation, "Incorrect")
+        End If
+        QuestionLoad.NextQuestion()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If Button3.Text = CSV.questionArray(x, answer) Then
+            GameScore = GameScore + 1
+            Label3.Text = "Score: " + GameScore.ToString
+            MsgBox("Correct Answer!", MsgBoxStyle.Information, "Correct")
+        Else
+            MsgBox("Incorrect Answer!", MsgBoxStyle.Exclamation, "Incorrect")
+        End If
+        QuestionLoad.NextQuestion()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If Button5.Text = CSV.questionArray(x, answer) Then
+            GameScore = GameScore + 1
+            Label3.Text = "Score: " + GameScore.ToString
+            MsgBox("Correct Answer!", MsgBoxStyle.Information, "Correct")
+        Else
+            MsgBox("Incorrect Answer!", MsgBoxStyle.Exclamation, "Incorrect")
+        End If
+        QuestionLoad.NextQuestion()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If Button4.Text = CSV.questionArray(x, answer) Then
+            GameScore = GameScore + 1
+            Label3.Text = "Score: " + GameScore.ToString
+            MsgBox("Correct Answer!", MsgBoxStyle.Information, "Correct")
+        Else
+            MsgBox("Incorrect Answer!", MsgBoxStyle.Exclamation, "Incorrect")
+        End If
+        QuestionLoad.NextQuestion()
     End Sub
 End Class
