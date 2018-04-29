@@ -1,6 +1,6 @@
 ﻿Public Class WelcomeScreen
     Public playerName As String
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub WelcomeScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CSV.ReadCSVFileToArray()
         playerName = ""
     End Sub

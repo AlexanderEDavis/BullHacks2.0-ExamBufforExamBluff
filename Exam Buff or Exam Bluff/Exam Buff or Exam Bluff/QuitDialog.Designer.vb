@@ -23,9 +23,9 @@ Partial Class QuitDialog
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.OK_Button = New System.Windows.Forms.Button()
-        Me.Cancel_Button = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnEndGame = New System.Windows.Forms.Button()
+        Me.btnResume = New System.Windows.Forms.Button()
+        Me.lblQuitCheck = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -35,8 +35,8 @@ Partial Class QuitDialog
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnEndGame, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnResume, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(73, 136)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -45,46 +45,47 @@ Partial Class QuitDialog
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(195, 36)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'OK_Button
+        'btnEndGame
         '
-        Me.OK_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.OK_Button.Location = New System.Drawing.Point(4, 4)
-        Me.OK_Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(89, 28)
-        Me.OK_Button.TabIndex = 0
-        Me.OK_Button.Text = "Yes"
+        Me.btnEndGame.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnEndGame.Location = New System.Drawing.Point(4, 4)
+        Me.btnEndGame.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEndGame.Name = "btnEndGame"
+        Me.btnEndGame.Size = New System.Drawing.Size(89, 28)
+        Me.btnEndGame.TabIndex = 0
+        Me.btnEndGame.Text = "Yes"
         '
-        'Cancel_Button
+        'btnResume
         '
-        Me.Cancel_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel_Button.Location = New System.Drawing.Point(101, 4)
-        Me.Cancel_Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.Cancel_Button.Name = "Cancel_Button"
-        Me.Cancel_Button.Size = New System.Drawing.Size(89, 28)
-        Me.Cancel_Button.TabIndex = 1
-        Me.Cancel_Button.Text = "No"
+        Me.btnResume.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnResume.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnResume.Location = New System.Drawing.Point(101, 4)
+        Me.btnResume.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnResume.Name = "btnResume"
+        Me.btnResume.Size = New System.Drawing.Size(89, 28)
+        Me.btnResume.TabIndex = 1
+        Me.btnResume.Text = "No"
         '
-        'Label1
+        'lblQuitCheck
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(47, 60)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(198, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Are you sure you wish to quit?"
+        Me.lblQuitCheck.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblQuitCheck.Location = New System.Drawing.Point(0, 0)
+        Me.lblQuitCheck.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblQuitCheck.Name = "lblQuitCheck"
+        Me.lblQuitCheck.Size = New System.Drawing.Size(284, 136)
+        Me.lblQuitCheck.TabIndex = 1
+        Me.lblQuitCheck.Text = "Are you sure you wish to end the game?"
+        Me.lblQuitCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'QuitDialog
         '
-        Me.AcceptButton = Me.OK_Button
+        Me.AcceptButton = Me.btnEndGame
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.Cancel_Button
+        Me.CancelButton = Me.btnResume
         Me.ClientSize = New System.Drawing.Size(284, 187)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.lblQuitCheck)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
@@ -95,11 +96,10 @@ Partial Class QuitDialog
         Me.Text = "Are You Sure?"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents OK_Button As System.Windows.Forms.Button
-    Friend WithEvents Cancel_Button As System.Windows.Forms.Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents btnEndGame As System.Windows.Forms.Button
+    Friend WithEvents btnResume As System.Windows.Forms.Button
+    Friend WithEvents lblQuitCheck As Label
 End Class
