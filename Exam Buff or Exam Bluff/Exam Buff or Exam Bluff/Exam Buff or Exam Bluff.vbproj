@@ -96,6 +96,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Randomiser.vb" />
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WelcomeScreen.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
   <ItemGroup>
     <EmbeddedResource Include="QuitDialog.resx">
       <DependentUpon>QuitDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeScreen.resx">
       <DependentUpon>WelcomeScreen.vb</DependentUpon>
@@ -187,6 +196,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="appicon.ico" />
+    <Content Include="AppLogo.png" />
+    <None Include="Resources\AppLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
