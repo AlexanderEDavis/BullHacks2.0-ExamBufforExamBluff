@@ -22,6 +22,7 @@ Partial Class QuitDialog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(QuitDialog))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btnEndGame = New System.Windows.Forms.Button()
         Me.btnResume = New System.Windows.Forms.Button()
@@ -87,12 +88,13 @@ Partial Class QuitDialog
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.lblQuitCheck)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "QuitDialog"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Are You Sure?"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)

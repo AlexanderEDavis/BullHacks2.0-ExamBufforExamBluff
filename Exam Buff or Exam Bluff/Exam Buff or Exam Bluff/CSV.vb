@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 
 Module CSV
-    Public num_cols As Long
-    Public num_rows As Long
+    Public NumberofColumns As Long
+    Public NumberofQuestions As Long
     Public questionArray(1, 1) As String
 
     Public Sub ReadCSVFileToArray()
@@ -22,15 +22,15 @@ Module CSV
             strlines = tmpstream.ReadToEnd().Split(Environment.NewLine)
 
             ' Redimension the array.
-            num_rows = UBound(strlines)
+            NumberofQuestions = UBound(strlines)
             strline = strlines(0).Split(",")
-            num_cols = UBound(strline)
-            ReDim questionArray(num_rows, num_cols)
+            NumberofColumns = UBound(strline)
+            ReDim questionArray(NumberofQuestions, NumberofColumns)
 
             ' Copy the data into the array.
-            For x = 0 To num_rows
+            For x = 0 To NumberofQuestions
                 strline = strlines(x).Split(",")
-                For y = 0 To num_cols
+                For y = 0 To NumberofColumns
                     questionArray(x, y) = strline(y)
                 Next
             Next

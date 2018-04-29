@@ -12,6 +12,6 @@
 
     Public RandomQuestions As Array
     Public Sub Random()
-        RandomQuestions = Shuffle(Enumerable.Range(0, (CSV.num_rows + 1)).ToArray())
+        RandomQuestions = Shuffle(Enumerable.Range(0, (CSV.NumberofQuestions + 1)).ToArray())
     End Sub
 End Module

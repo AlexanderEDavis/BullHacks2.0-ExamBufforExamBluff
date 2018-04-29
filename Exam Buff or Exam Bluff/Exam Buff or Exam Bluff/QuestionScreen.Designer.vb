@@ -22,6 +22,7 @@ Partial Class QuestionScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(QuestionScreen))
         Me.lblQuestion = New System.Windows.Forms.Label()
         Me.lblGameScore = New System.Windows.Forms.Label()
         Me.btnEndGame = New System.Windows.Forms.Button()
@@ -115,9 +116,10 @@ Partial Class QuestionScreen
         Me.Controls.Add(Me.btnEndGame)
         Me.Controls.Add(Me.lblGameScore)
         Me.Controls.Add(Me.lblQuestion)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "QuestionScreen"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Exam Buff or Exam Bluff"
         Me.ResumeLayout(False)
         Me.PerformLayout()

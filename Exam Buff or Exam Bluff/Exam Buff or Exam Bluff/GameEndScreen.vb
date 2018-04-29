@@ -9,6 +9,6 @@
     End Sub
 
     Private Sub GameEndScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblFinalScore.Text = "You scored " + QuestionScreen.GameScore.ToString + " out of " + (CSV.num_rows + 1).ToString
+        lblFinalScore.Text = "You scored " + QuestionScreen.GameScore.ToString + " out of " + (CSV.NumberofQuestions + 1).ToString
     End Sub
 End Class
