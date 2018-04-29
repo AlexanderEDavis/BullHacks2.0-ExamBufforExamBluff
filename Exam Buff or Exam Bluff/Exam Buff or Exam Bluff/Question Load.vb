@@ -5,22 +5,22 @@
             GameEndScreen.Show()
             QuestionScreen.Close()
         Else
-            QuestionScreen.Label2.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 0)
-            QuestionScreen.Button1.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 1)
-            QuestionScreen.Button3.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 2)
-            QuestionScreen.Button5.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 3)
-            QuestionScreen.Button4.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 4)
+            QuestionScreen.lblQuestion.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 0)
+            QuestionScreen.btnAnswer1.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 1)
+            QuestionScreen.btnAnswer2.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 2)
+            QuestionScreen.btnAnswer3.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 3)
+            QuestionScreen.btnAnswer4.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 4)
             QuestionScreen.answer = CSV.questionArray(RandomQuestions(QuestionScreen.x), 5)
         End If
     End Sub
 
     Public Sub FirstQuestion()
         QuestionScreen.GameScore = 0
-        QuestionScreen.Label2.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 0)
-        QuestionScreen.Button1.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 1)
-        QuestionScreen.Button3.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 2)
-        QuestionScreen.Button5.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 3)
-        QuestionScreen.Button4.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 4)
+        QuestionScreen.lblQuestion.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 0)
+        QuestionScreen.btnAnswer1.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 1)
+        QuestionScreen.btnAnswer2.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 2)
+        QuestionScreen.btnAnswer3.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 3)
+        QuestionScreen.btnAnswer4.Text = CSV.questionArray(RandomQuestions(QuestionScreen.x), 4)
         QuestionScreen.answer = CSV.questionArray(RandomQuestions(QuestionScreen.x), 5)
     End Sub
 End Module

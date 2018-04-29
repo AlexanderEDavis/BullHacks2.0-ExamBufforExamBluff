@@ -2,13 +2,13 @@
 
 Public Class QuitDialog
 
-    Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
+    Private Sub btnEndGame_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEndGame.Click
         GameOverScreen.Show()
         QuestionScreen.Close()
         Me.Close()
     End Sub
 
-    Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
+    Private Sub btnResume_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnResume.Click
         Me.Close()
     End Sub
 End Class
