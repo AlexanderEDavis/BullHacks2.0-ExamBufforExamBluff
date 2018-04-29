@@ -22,75 +22,77 @@ Partial Class GameOverScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.OK_Button = New System.Windows.Forms.Button()
-        Me.Cancel_Button = New System.Windows.Forms.Button()
+        Me.lblGameOver = New System.Windows.Forms.Label()
+        Me.lblFinalScore = New System.Windows.Forms.Label()
+        Me.lblPlayAgain = New System.Windows.Forms.Label()
+        Me.btnYes = New System.Windows.Forms.Button()
+        Me.btnNo = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblGameOver
         '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(605, 30)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Game Over"
+        Me.lblGameOver.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblGameOver.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!)
+        Me.lblGameOver.Location = New System.Drawing.Point(0, 0)
+        Me.lblGameOver.Name = "lblGameOver"
+        Me.lblGameOver.Size = New System.Drawing.Size(465, 52)
+        Me.lblGameOver.TabIndex = 0
+        Me.lblGameOver.Text = "Game Over"
+        Me.lblGameOver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'lblFinalScore
         '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Location = New System.Drawing.Point(0, 30)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(605, 30)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "You scored ***SCORE*** out of ***TOTAL***"
+        Me.lblFinalScore.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblFinalScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!)
+        Me.lblFinalScore.Location = New System.Drawing.Point(0, 52)
+        Me.lblFinalScore.Name = "lblFinalScore"
+        Me.lblFinalScore.Size = New System.Drawing.Size(465, 52)
+        Me.lblFinalScore.TabIndex = 0
+        Me.lblFinalScore.Text = "You scored ***SCORE*** out of ***TOTAL***"
+        Me.lblFinalScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'lblPlayAgain
         '
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Location = New System.Drawing.Point(0, 60)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(605, 30)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Would you like to play again?"
+        Me.lblPlayAgain.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblPlayAgain.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!)
+        Me.lblPlayAgain.Location = New System.Drawing.Point(0, 104)
+        Me.lblPlayAgain.Name = "lblPlayAgain"
+        Me.lblPlayAgain.Size = New System.Drawing.Size(465, 36)
+        Me.lblPlayAgain.TabIndex = 1
+        Me.lblPlayAgain.Text = "Would you like to play again?"
+        Me.lblPlayAgain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'OK_Button
+        'btnYes
         '
-        Me.OK_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.OK_Button.Location = New System.Drawing.Point(213, 207)
-        Me.OK_Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(89, 28)
-        Me.OK_Button.TabIndex = 2
-        Me.OK_Button.Text = "Yes"
+        Me.btnYes.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnYes.Location = New System.Drawing.Point(100, 160)
+        Me.btnYes.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnYes.Name = "btnYes"
+        Me.btnYes.Size = New System.Drawing.Size(122, 42)
+        Me.btnYes.TabIndex = 2
+        Me.btnYes.Text = "Yes"
         '
-        'Cancel_Button
+        'btnNo
         '
-        Me.Cancel_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel_Button.Location = New System.Drawing.Point(311, 207)
-        Me.Cancel_Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Cancel_Button.Name = "Cancel_Button"
-        Me.Cancel_Button.Size = New System.Drawing.Size(89, 28)
-        Me.Cancel_Button.TabIndex = 3
-        Me.Cancel_Button.Text = "No"
+        Me.btnNo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnNo.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnNo.Location = New System.Drawing.Point(234, 160)
+        Me.btnNo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnNo.Name = "btnNo"
+        Me.btnNo.Size = New System.Drawing.Size(122, 42)
+        Me.btnNo.TabIndex = 3
+        Me.btnNo.Text = "No"
         '
         'GameOverScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(605, 300)
-        Me.Controls.Add(Me.OK_Button)
-        Me.Controls.Add(Me.Cancel_Button)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ClientSize = New System.Drawing.Size(465, 216)
+        Me.Controls.Add(Me.btnYes)
+        Me.Controls.Add(Me.btnNo)
+        Me.Controls.Add(Me.lblPlayAgain)
+        Me.Controls.Add(Me.lblFinalScore)
+        Me.Controls.Add(Me.lblGameOver)
         Me.Name = "GameOverScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Game Over"
@@ -98,9 +100,9 @@ Partial Class GameOverScreen
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents OK_Button As Button
-    Friend WithEvents Cancel_Button As Button
+    Friend WithEvents lblGameOver As Label
+    Friend WithEvents lblFinalScore As Label
+    Friend WithEvents lblPlayAgain As Label
+    Friend WithEvents btnYes As Button
+    Friend WithEvents btnNo As Button
 End Class
