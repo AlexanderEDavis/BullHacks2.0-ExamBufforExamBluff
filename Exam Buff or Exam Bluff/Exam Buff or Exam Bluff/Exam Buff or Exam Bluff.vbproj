@@ -88,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSV.vb" />
-    <Compile Include="Data.vb" />
     <Compile Include="Question Load.vb" />
     <Compile Include="QuitDialog.Designer.vb">
       <DependentUpon>QuitDialog.vb</DependentUpon>
@@ -96,6 +95,7 @@
     <Compile Include="QuitDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Randomiser.vb" />
     <Compile Include="WelcomeScreen.vb">
       <SubType>Form</SubType>
     </Compile>
