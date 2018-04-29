@@ -32,10 +32,10 @@ Partial Class GameEndScreen
         'OK_Button
         '
         Me.OK_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.OK_Button.Location = New System.Drawing.Point(201, 209)
-        Me.OK_Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.OK_Button.Location = New System.Drawing.Point(276, 314)
+        Me.OK_Button.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(89, 28)
+        Me.OK_Button.Size = New System.Drawing.Size(122, 42)
         Me.OK_Button.TabIndex = 7
         Me.OK_Button.Text = "Yes"
         '
@@ -43,54 +43,50 @@ Partial Class GameEndScreen
         '
         Me.Cancel_Button.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel_Button.Location = New System.Drawing.Point(298, 209)
-        Me.Cancel_Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.Cancel_Button.Location = New System.Drawing.Point(410, 314)
+        Me.Cancel_Button.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Cancel_Button.Name = "Cancel_Button"
-        Me.Cancel_Button.Size = New System.Drawing.Size(89, 28)
+        Me.Cancel_Button.Size = New System.Drawing.Size(122, 42)
         Me.Cancel_Button.TabIndex = 8
         Me.Cancel_Button.Text = "No"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(193, 155)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(265, 232)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(193, 17)
+        Me.Label3.Size = New System.Drawing.Size(266, 25)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Would you like to play again?"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(143, 107)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(197, 160)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(282, 17)
+        Me.Label2.Size = New System.Drawing.Size(408, 25)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "You scored ***SCORE*** out of ***TOTAL***"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(179, 61)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(246, 92)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(223, 17)
+        Me.Label1.Size = New System.Drawing.Size(307, 25)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "You've answered all the questions"
         '
         'GameEndScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(582, 300)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.OK_Button)
         Me.Controls.Add(Me.Cancel_Button)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "GameEndScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Game Over"

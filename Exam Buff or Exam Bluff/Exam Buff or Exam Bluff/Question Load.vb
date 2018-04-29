@@ -15,6 +15,7 @@
     End Sub
 
     Public Sub FirstQuestion()
+        QuestionScreen.GameScore = 0
         QuestionScreen.Label2.Text = CSV.questionArray(QuestionScreen.x, 0)
         QuestionScreen.Button1.Text = CSV.questionArray(QuestionScreen.x, 1)
         QuestionScreen.Button3.Text = CSV.questionArray(QuestionScreen.x, 2)

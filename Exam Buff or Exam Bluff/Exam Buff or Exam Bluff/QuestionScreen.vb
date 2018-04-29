@@ -4,9 +4,10 @@
     Public answer As Integer
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         QuestionLoad.FirstQuestion()
+        Label3.Text = "Score: " + GameScore.ToString
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         QuitDialog.Show()
     End Sub
 
